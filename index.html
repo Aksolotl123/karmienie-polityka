@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — Karmienie Dziecka</title>
+<style>
+  :root { --bg:#fbfaf8; --fg:#1f1d1a; --muted:#5f5a53; --line:#e4e0da; --accent:#8a4f7d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#161514; --fg:#ece9e4; --muted:#a8a29a; --line:#2e2c29; --accent:#d59ac6; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.9rem; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:2.2em 0 .5em; padding-top:1em; border-top:1px solid var(--line); }
+  .meta { color:var(--muted); margin:0 0 2em; }
+  table { width:100%; border-collapse:collapse; margin:1em 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; }
+  .wrap { overflow-x:auto; }
+  a { color:var(--accent); }
+  li { margin:.25em 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Polityka prywatności aplikacji „Karmienie Dziecka”</h1>
+<p class="meta">Obowiązuje od: 29 września 2026</p>
+
+<p>Ta polityka opisuje, jakie dane przetwarza aplikacja mobilna „Karmienie Dziecka” na Androida
+(„Aplikacja”), w jakim celu, komu je powierzamy i jakie prawa Ci przysługują. Aplikacja służy do
+prowadzenia dziennika karmienia, wagi, suplementów i leków niemowlęcia, wspólnego dla członków
+rodziny.</p>
+
+<h2>1. Administrator danych</h2>
+<p>Administratorem danych jest Lukasz T.
+Kontakt w sprawach prywatności: <a href="mailto:tuz.lukasz@gmail.com">tuz.lukasz@gmail.com</a>.</p>
+
+<h2>2. Jakie dane przetwarzamy</h2>
+<div class="wrap">
+<table>
+  <tr><th>Kategoria</th><th>Dane</th><th>Gdzie są przechowywane</th></tr>
+  <tr><td>Konto</td>
+      <td>Nazwa i adres e-mail konta Google, identyfikator użytkownika (UID) nadany przez Firebase Authentication</td>
+      <td>Google Firebase</td></tr>
+  <tr><td>Wpisy w dzienniku</td>
+      <td>Data i godzina, rodzaj wpisu (karmienie butelką/piersią, posiłek, waga, wzrost, suplement, lek przeciwbólowy/przeciwgorączkowy), ilość, dawka, nazwa leku lub suplementu, czas trwania, oraz autor wpisu (UID i imię z konta Google)</td>
+      <td>Firebase Realtime Database, region europe-west1 (Belgia)</td></tr>
+  <tr><td>Dane techniczne konta</td>
+      <td>Token powiadomień Firebase Cloud Messaging, numer wersji Aplikacji, znacznik uprawnień dostępu</td>
+      <td>Firebase Realtime Database</td></tr>
+  <tr><td>Profil dziecka</td>
+      <td>Imię, płeć, data urodzenia, waga i wzrost urodzeniowy (do siatek centylowych)</td>
+      <td><strong>Tylko na Twoim urządzeniu</strong> — nie jest wysyłany na serwer</td></tr>
+  <tr><td>Ustawienia</td>
+      <td>Motyw, wybrana tapeta (także wskazane przez Ciebie zdjęcie z galerii), wpisy oczekujące na wysłanie przy braku sieci</td>
+      <td>Tylko na Twoim urządzeniu</td></tr>
+  <tr><td>Statystyki użycia</td>
+      <td>Identyfikator instancji aplikacji, zdarzenia w aplikacji (np. uruchomienia, ekrany), model urządzenia i wersja systemu, przybliżona lokalizacja wyznaczona z adresu IP</td>
+      <td>Google Analytics for Firebase</td></tr>
+  <tr><td>Integralność aplikacji</td>
+      <td>Sygnały Google Play Integrity potwierdzające, że żądania pochodzą z oryginalnej Aplikacji</td>
+      <td>Firebase App Check / Google Play</td></tr>
+</table>
+</div>
+<p><strong>Dane o zdrowiu.</strong> Wpisy dotyczące karmienia, wagi, wzrostu, suplementów i leków
+dziecka są danymi dotyczącymi zdrowia. Wprowadza je rodzic lub opiekun.</p>
+<p><strong>Wprowadzanie głosowe.</strong> Po naciśnięciu przycisku mikrofonu rozpoznawanie mowy
+wykonuje systemowa usługa Google na Twoim urządzeniu (według jej własnych zasad). Aplikacja nie ma
+dostępu do nagrania — otrzymuje wyłącznie rozpoznany tekst, z którego tworzy wpis. Aplikacja nie
+prosi o uprawnienie do mikrofonu.</p>
+<p>Aplikacja nie zbiera dokładnej lokalizacji, kontaktów, zdjęć (poza zdjęciem, które sam wskażesz
+jako tapetę — pozostaje ono na urządzeniu) ani nie wyświetla reklam.</p>
+
+<h2>3. Cele i podstawy prawne</h2>
+<ul>
+  <li><strong>Prowadzenie wspólnego dziennika i synchronizacja między urządzeniami rodziny</strong> —
+      art. 6 ust. 1 lit. b RODO (świadczenie usługi, z której korzystasz); dla danych o zdrowiu dziecka —
+      art. 9 ust. 2 lit. a RODO (wyraźna zgoda rodzica/opiekuna, wyrażana przez wprowadzenie danych;
+      możesz ją wycofać, usuwając wpisy lub konto).</li>
+  <li><strong>Logowanie i kontrola dostępu</strong> — art. 6 ust. 1 lit. b RODO. Dostęp do dziennika mają
+      tylko konta zatwierdzone przez administratora.</li>
+  <li><strong>Powiadomienia</strong> (przypomnienie o karmieniu; informacja, że inny członek rodziny dodał
+      wpis — zawiera jego imię i opis wpisu) — art. 6 ust. 1 lit. b RODO. Możesz je wyłączyć w ustawieniach
+      Androida.</li>
+  <li><strong>Statystyki użycia i bezpieczeństwo</strong> (analiza stabilności i sposobu korzystania,
+      ochrona przed nieuprawnionym dostępem) — art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes).</li>
+</ul>
+
+<h2>4. Komu powierzamy dane</h2>
+<ul>
+  <li><strong>Google Ireland Limited / Google LLC</strong> — dostawca usług Firebase (Authentication,
+      Realtime Database, Cloud Functions, Cloud Messaging, Analytics, App Check) i Google Play, działający
+      jako podmiot przetwarzający. Baza danych i funkcje serwerowe działają w regionie europe-west1 (Belgia).
+      Część usług (np. Analytics, Cloud Messaging) może przetwarzać dane w USA — na podstawie
+      standardowych klauzul umownych Komisji Europejskiej oraz programu EU-US Data Privacy Framework.
+      Szczegóły: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Członkowie rodziny z dostępem do dziennika</strong> — widzą wszystkie wpisy wraz z imieniem
+      ich autora.</li>
+</ul>
+<p>Nie sprzedajemy danych, nie udostępniamy ich reklamodawcom ani innym podmiotom w celach marketingowych.</p>
+
+<h2>5. Jak długo przechowujemy dane</h2>
+<ul>
+  <li>Dane konta i dane techniczne — do czasu usunięcia konta.</li>
+  <li>Wpisy w dzienniku — do czasu ich usunięcia w Aplikacji. Wpisy są wspólne dla rodziny, dlatego
+      usunięcie konta nie usuwa automatycznie dodanych przez Ciebie wpisów; na prośbę (pkt 7) usuniemy
+      je lub usuniemy z nich Twoje imię i identyfikator.</li>
+  <li>Dane Google Analytics — zgodnie z ustawieniem retencji w usłudze (maksymalnie 14 miesięcy).</li>
+  <li>Dane przechowywane tylko na urządzeniu — do odinstalowania Aplikacji lub wyczyszczenia jej danych.
+      Nie są objęte kopią zapasową Androida.</li>
+</ul>
+
+<h2>6. Bezpieczeństwo</h2>
+<p>Połączenia są szyfrowane (HTTPS/TLS; ruch nieszyfrowany jest zablokowany). Dostęp do bazy chronią
+reguły bezpieczeństwa (każdy użytkownik widzi wyłącznie swoje dane konta, a dziennik — tylko
+zatwierdzone konta) oraz Firebase App Check. Dane w usługach Google są szyfrowane w spoczynku.</p>
+
+<h2>7. Usunięcie konta i danych</h2>
+<ul>
+  <li><strong>W Aplikacji:</strong> Ustawienia (ikona koła zębatego) → <em>Usuń konto</em>. Usuwa konto
+      logowania oraz dane konta (token powiadomień, wersję aplikacji, uprawnienia).</li>
+  <li><strong>Bez Aplikacji:</strong> napisz na <a href="mailto:tuz.lukasz@gmail.com">tuz.lukasz@gmail.com</a>
+      z adresu konta Google używanego w Aplikacji, z tematem „Usunięcie konta”. Możesz też poprosić o
+      usunięcie dodanych przez siebie wpisów. Realizujemy prośby w ciągu 30 dni.</li>
+</ul>
+
+<h2>8. Twoje prawa</h2>
+<p>Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania,
+przeniesienia, sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie oraz do
+wycofania zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania przed jej
+wycofaniem). Aby skorzystać z praw, napisz na adres z pkt 1. Masz też prawo wnieść skargę do
+Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa,
+<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
+
+<h2>9. Dzieci</h2>
+<p>Aplikacja jest przeznaczona dla dorosłych — rodziców i opiekunów. Dziecko nie korzysta z Aplikacji;
+dane o dziecku wprowadza rodzic lub opiekun, który za nie odpowiada.</p>
+
+<h2>10. Zmiany polityki</h2>
+<p>O istotnych zmianach poinformujemy w Aplikacji lub przy aktualizacji w Google Play. Aktualna wersja
+jest zawsze dostępna pod tym adresem.</p>
+</main>
+</body>
+</html>
